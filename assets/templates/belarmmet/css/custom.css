@@ -1,0 +1,165 @@
+.margin-li li {
+	margin-bottom: 20px;
+}
+
+.dispn {
+	display: none;
+}
+
+.modal .dispn {
+	display: none;
+}
+
+#form_callback .error {
+	border: 1px solid red  !important;
+	background-color: rgb(252, 178, 178)  !important;
+	transition: .25s linear;
+}
+
+#form_feedback .error {
+	border: 1px solid red  !important;
+	background-color: rgb(252, 178, 178)  !important;
+	transition: .25s linear;
+}
+
+#form_reviews_popup .error {
+	border: 1px solid red  !important;
+	background-color: rgb(252, 178, 178)  !important;
+	transition: .25s linear;
+}
+
+#form_faq_callback .error {
+	border: 1px solid red  !important;
+	background-color: rgb(252, 178, 178)  !important;
+	transition: .25s linear;
+}
+
+#form_order_measurement .error {
+	border: 1px solid red  !important;
+	background-color: rgb(252, 178, 178)  !important;
+	transition: .25s linear;
+}
+
+#form_callback_popap .error {
+	border: 1px solid red  !important;
+	background-color: rgb(252, 178, 178)  !important;
+	transition: .25s linear;
+}
+
+#form_question_popap .error {
+	border: 1px solid red  !important;
+	background-color: rgb(252, 178, 178)  !important;
+	transition: .25s linear;
+}
+
+#form_order_service .error {
+	border: 1px solid red  !important;
+	background-color: rgb(252, 178, 178)  !important;
+	transition: .25s linear;
+}
+
+#form_callback_price .error {
+	border: 1px solid red  !important;
+	background-color: rgb(252, 178, 178)  !important;
+	transition: .25s linear;
+}
+
+#form_order_product .error {
+	border: 1px solid red  !important;
+	background-color: rgb(252, 178, 178)  !important;
+	transition: .25s linear;
+}
+
+#form_subscribe_articles .error {
+	border: 1px solid red  !important;
+	background-color: rgb(252, 178, 178)  !important;
+	transition: .25s linear;
+}
+
+#form_wholesale_customers .error {
+	border: 1px solid red  !important;
+	background-color: rgb(252, 178, 178)  !important;
+	transition: .25s linear;
+}
+
+#form_write_to_us .error {
+	border: 1px solid red  !important;
+	background-color: rgb(252, 178, 178)  !important;
+	transition: .25s linear;
+}
+
+#form_order_service .error {
+	border: 1px solid red  !important;
+	background-color: rgb(252, 178, 178)  !important;
+	transition: .25s linear;	
+}
+
+#form_leave-review .error {
+	border: 1px solid red  !important;
+	background-color: rgb(252, 178, 178)  !important;
+	transition: .25s linear;	
+}
+
+#form_order_popup .error {
+	border: 1px solid red  !important;
+	background-color: rgb(252, 178, 178)  !important;
+	transition: .25s linear;	
+}
+
+#order .uk-modal-dialog {
+	width: auto;
+	max-width: 330px;
+	padding: 0;
+}
+#search-panel-top {  display: none;  position: absolute;  bottom: -54px;  left: 0;  right: 0;  background: #53575a;  z-index: 11;}
+#search-panel-top .flex-search-panel {  display: -webkit-flex;  display: -ms-flexbox;  display: flex;  -webkit-align-items: center;  -ms-flex-align: center;  align-items: center;  height: 54px;}
+#search-panel-top .flex-search-panel input {  -webkit-flex-grow: 1;  -ms-flex-positive: 1;  flex-grow: 1;  height: 34px;  padding: 0 12px;  box-shadow: inset 1px 1px 2px 0px rgba(50, 50, 50, 0.06);}
+#search-panel-top .flex-search-panel button {  -webkit-flex-basis: 90px;  -ms-flex-preferred-size: 90px;  flex-basis: 90px;  border: 1px solid #fff;  background: none;  height: 34px;  color: #fff;  font-weight: bold;  text-transform: uppercase;  margin: 0 18px 0 12px;  cursor: pointer;}
+#search-panel-top .flex-search-panel .close {  -webkit-flex-basis: 30px;  -ms-flex-preferred-size: 30px;  flex-basis: 30px;  color: #fff;  font-size: 48px;  font-weight: 300;  cursor: pointer;}
+.search-result {
+	padding: 0;
+}
+.search-result input{
+	width: 90%;
+	height: 38px;
+	padding: 0 15px
+}
+.product-block .title {
+	color: #414141;
+	font-weight: 500;
+}
+.price-block .title {
+	font-size: 20px;
+	padding: 20px 15px;
+}
+.product-block .wrap {
+	position: relative;
+}
+.product-block .content {
+	padding-bottom: 67px;
+	background: #fff;
+}
+.product-block .price {
+	margin: 5px 0;
+}
+.product-block .button {
+	position: absolute;
+	bottom: 5px;
+}
+.gate-catalog  .bx-wrapper{
+	max-width: 905px !important;
+}
+.popular-products .bx-wrapper {
+	max-width: 1140px !important;
+}
+
+.sale-outside .wrap p a{
+	color: #414141;
+}
+.top-info-product .product-icons {
+	left: 35px;
+}
+
+.min-description-block{
+	margin-top: 10px;
+}

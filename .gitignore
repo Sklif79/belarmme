@@ -1,0 +1,16 @@
+# ignore any files beginning with .
+#\.*
+
+# and any files in the cache directory
+/assets/cache/*
+
+# and the config file
+/manager/includes/config.inc.php
+
+# except do not ignore .gitignore
+!.gitignore
+.idea/
+belarm.by_back_06-06-2017_11-30.zip
+belarmmet.by_back_06-06-2017_10-05.zip
+belarmmet.by_back_2022-05-20_16-05.zip
+belarmmet.webco.by_back_26-08-2016_12-30.zip
