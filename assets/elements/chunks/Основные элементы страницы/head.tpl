@@ -5,7 +5,7 @@ description:css+js+other
 <title>[[if? &is=`[*longtitle*]:isempty` &then=`[*pagetitle*]` &else=`[*longtitle*]`]]</title>
 <meta name="description" content="[*description*]"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-<meta name="viewport" content="width=1200">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
 [[if? &is=`[*id*]:=:1` &then=`<meta name="cmsmagazine" content="6f9669405ccc8cd147c1f4ddb410c74e" />`]]
 <base href="https://belarmmet.by/">
@@ -27,7 +27,7 @@ description:css+js+other
 <script src="assets/templates/belarmmet/libs/uikit/js/components/timepicker.min.js"></script>
 <script src="assets/templates/belarmmet/libs/uikit/js/components/autocomplete.min.js"></script>
 <script src="assets/templates/belarmmet/libs/jquery.bxslider/jquery.bxslider.min.js"></script>
-<script src="assets/templates/belarmmet/libs/sweetalert-master/dist/sweetalert.min.js"></script> 
+<script src="assets/templates/belarmmet/libs/sweetalert-master/dist/sweetalert.min.js"></script>
 <script src="assets/templates/belarmmet/js/forms.js"></script>
 <meta name="yandex-verification" content="34020da9bd2a9a37" />
 <meta name="google-site-verification" content="9ZMtNtYGBgbvt2x9KfEp7QVOa6DfRfbdOZIDZD0waB8" />

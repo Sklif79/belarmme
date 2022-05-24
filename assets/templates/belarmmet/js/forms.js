@@ -11,7 +11,7 @@ function clos_clear_callback() {
     $('#form_callback input[name="name"]').removeClass("error");
     $('#form_callback input[name="phone"]').removeClass("error");
 	$('#form_callback input[name="call_time"]').removeClass("error");
-	
+
     $('#form_callback input[name="name"]').val('');
     $('#form_callback input[name="phone"]').val('');
 	$('#form_callback input[name="call_time"]').val('');
@@ -42,7 +42,7 @@ $(document).ready(function () {
             $('#form_callback input[name="phone"]').addClass("error");
         }
     });
-	
+
 	$('#form_feedback input[name="call_time"]').blur(function() {
 		var s3=$('#form_feedback input[name="call_time"]').val();
 		$('#form_feedback input[name="call_time"]').removeClass("error");
@@ -86,7 +86,7 @@ $(document).ready(function () {
             if (s3.length !== 0) {
                 $('#callback-header .uk-modal-dialog > h3').html("Спам!!!");
             }
-			
+
 			if (s4.length < 4) {
 				$('#form_callback input[name="call_time"]').addClass("error");
 			}
@@ -127,11 +127,11 @@ function form_callback_ajax(val, url_ajax) {
                     break
 
                 default:
-                    sweetAlert({title:"Ошибка",text:"К сожалению, при отправке сообщения возникли проблемы. Попробуйте отправить позже",type:"error",timer:5000});	
+                    sweetAlert({title:"Ошибка",text:"К сожалению, при отправке сообщения возникли проблемы. Попробуйте отправить позже",type:"error",timer:5000});
             }
 			setTimeout(function () {
 				$("#callback .uk-modal-close").trigger('click');
-			},5000);	
+			},5000);
         }
     });
 }
@@ -145,7 +145,7 @@ function form_callback_ajax(val, url_ajax) {
 		$('#form_feedback input[name="phone"]').removeClass("error");
 		$('#form_feedback textarea[name="message"]').removeClass("error");
 		$('#form_feedback h3').removeAttr("style");
-		
+
 		$('#form_feedback input[name="name"]').val('');
 		$('#form_feedback input[name="email"]').val('');
 		$('#form_feedback input[name="email_back"]').val('');
@@ -153,17 +153,17 @@ function form_callback_ajax(val, url_ajax) {
 		$('#form_feedback textarea[name="message"]').val('');
 		$('#form_feedback h3').html('Обратная связь');
     }
-	
+
 $(document).ready(function() {
-	
+
 	$('#form_feedback input').focus(function() {
 		$(this).removeClass("error");
 	});
-	
+
 	$('#form_feedback textarea').focus(function() {
 		$(this).removeClass("error");
 	});
-	
+
 	$('#form_feedback input[name="name"]').blur(function() {
 		var regname=/^[а-яА-ЯёЁa-zA-Z -]+$/;
 		var s1=$('#form_feedback input[name="name"]').val();
@@ -172,7 +172,7 @@ $(document).ready(function() {
 		$('#form_feedback input[name="name"]').addClass("error");
 		}
 	});
-	
+
 	$('#form_feedback input[name="phone"]').blur(function() {
 		var regphone=/(\+)?([-\._\(\) ]?[\d]{2,20}[-\._\(\) ]?){2,10}/;
 		var s2=$('#form_feedback input[name="phone"]').val();
@@ -181,7 +181,7 @@ $(document).ready(function() {
 			$('#form_feedback input[name="phone"]').addClass("error");
 		}
 	});
-	
+
 	$('#form_feedback input[name="email"]').blur(function() {
 		var regmail=/^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$/;
 		var s3=$('#form_feedback input[name="email"]').val();
@@ -190,8 +190,8 @@ $(document).ready(function() {
 			$('#form_feedback input[name="email"]').addClass("error");
 		}
 	});
-	
-	
+
+
 	$('#form_feedback textarea[name="message"]').blur(function() {
 		var s4=$('#form_feedback textarea[name="message"]').val();
 		$('#form_feedback textarea[name="message"]').removeClass("error");
@@ -199,24 +199,24 @@ $(document).ready(function() {
 			$('#form_feedback textarea[name="message"]').addClass("error");
 		}
 	});
-	
+
 $("#form_feedback").submit(function() { return false; });
-				
+
 	$('#form_feedback button').on("click", function(){
-		
+
 	var regname=/^[а-яА-ЯёЁa-zA-Z -]+$/;
 	var regmail=/^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$/;
 	var regphone=/(\+)?([-\._\(\) ]?[\d]{2,20}[-\._\(\) ]?){2,10}/;
-	var valid=false;	
+	var valid=false;
 
 		$('#form_feedback input[name="name"]').removeClass("error");
 		$('#form_feedback input[name="email"]').removeClass("error");
 		$('#form_feedback input[name="phone"]').removeClass("error");
 		$('#form_feedback textarea[name="message"]').removeClass("error");
-		
+
 		$('#form_feedback h3').removeAttr("style");
 		$('#form_feedback h3').html('Обратная связь');
-	
+
 	var s1=$('#form_feedback input[name="name"]').val();
 	var s2=$('#form_feedback input[name="phone"]').val();
 	var s3=$('#form_feedback input[name="email"]').val();
@@ -230,24 +230,24 @@ $("#form_feedback").submit(function() { return false; });
 		if((s1.length<2) || (!regname.test(s1)) || (s1.length>=60)){
 			$('#form_feedback input[name="name"]').addClass("error");
 		}
-		
+
 		if((s2.length<6) || (!regphone.test(s2)) || (s2.length>=30)){
 			$('#form_feedback input[name="phone"]').addClass("error");
 		}
-		
+
 		if((!regmail.test(s3)) && (s3 !="")){
 			$('#form_feedback input[name="email"]').addClass("error");
 		}
-		
+
 		if(s4.length!=0){
 			$('#form_feedback h3').css({"background-color":"white","color":"red"});
 			$('#form_feedback h3').html("Спам!!!");
 		}
-		
+
 		if(s5.length<2){
 			$('#form_feedback textarea[name="message"]').addClass("error");
 		}
-	}		
+	}
 		if(valid==true){
 			var z='&name='+s1+'&phone='+s2+'&email='+s3+'&email_back='+s4+'&message='+s5+'&type_form='+s6;
 			var a_url = $('#form_feedback').attr('action');
@@ -278,7 +278,7 @@ $("#form_feedback").submit(function() { return false; });
                     break
 
                 default:
-                    sweetAlert({title:"Ошибка",text:"К сожалению, при отправке сообщения возникли проблемы. Попробуйте отправить позже",type:"error",timer:5000});	
+                    sweetAlert({title:"Ошибка",text:"К сожалению, при отправке сообщения возникли проблемы. Попробуйте отправить позже",type:"error",timer:5000});
             }
 			setTimeout(function () {
 			 clos_clear_feedback();
@@ -286,7 +286,7 @@ $("#form_feedback").submit(function() { return false; });
 		}
 	});
 	}
-	
+
 /*form form_reviews_popup (оставить отзыв всплывающая форма)*/
 
 $(document).ready(function () {
@@ -299,7 +299,7 @@ function clos_clear_reviews() {
     $('#form_reviews_popup input[name="name"]').removeClass("error");
     $('#form_reviews_popup input[name="email"]').removeClass("error");
 	$('#form_reviews_popup textarea[name="message"]').removeClass("error");
-	
+
     $('#form_reviews_popup input[name="name"]').val('');
     $('#form_reviews_popup input[name="email"]').val('');
 	$('#form_reviews_popup textarea[name="message"]').val('');
@@ -312,7 +312,7 @@ $(document).ready(function () {
     $('#form_reviews_popup input').focus(function () {
         $(this).removeClass("error");
     });
-	
+
 	$('#form_reviews_popup textarea').focus(function () {
         $(this).removeClass("error");
     });
@@ -334,7 +334,7 @@ $(document).ready(function () {
 			$('#form_reviews_popup input[name="email"]').addClass("error");
 		}
 	});
-	
+
 	$('#form_reviews_popup textarea[name="message"]').blur(function() {
 		var s3=$('#form_reviews_popup textarea[name="message"]').val();
 		$('#form_reviews_popup textarea[name="message"]').removeClass("error");
@@ -378,7 +378,7 @@ $(document).ready(function () {
             if (s3.length !== 0) {
                 $('#reviews h3').html("Спам!!!");
             }
-			
+
 			if (s4.length <=2) {
 				$('#form_reviews_popup textarea[name="message"]').addClass("error");
 			}
@@ -419,11 +419,11 @@ function form_reviews_popup_ajax(val, url_ajax) {
                     break
 
                 default:
-                    sweetAlert({title:"Ошибка",text:"К сожалению, при отправке сообщения возникли проблемы. Попробуйте отправить позже",type:"error",timer:5000});	
+                    sweetAlert({title:"Ошибка",text:"К сожалению, при отправке сообщения возникли проблемы. Попробуйте отправить позже",type:"error",timer:5000});
             }
 			setTimeout(function () {
 				$("#reviews .uk-modal-close").trigger('click');
-			},5000);	
+			},5000);
         }
     });
 }
@@ -446,7 +446,7 @@ function clos_clear_order() {
     $('#form_order_popup input[name="phone"]').removeClass("error");
 	$('#form_order_popup input[name="call_time"]').removeClass("error");
 	$('#form_order_popup textarea[name="message"]').removeClass("error");
-	
+
     $('#form_order_popup input[name="name"]').val('');
     $('#form_order_popup input[name="phone"]').val('');
 	$('#form_order_popup input[name="call_time"]').val('');
@@ -460,7 +460,7 @@ $(document).ready(function () {
     $('#form_order_popup input').focus(function () {
         $(this).removeClass("error");
     });
-	
+
 	$('#form_order_popup textarea').focus(function () {
         $(this).removeClass("error");
     });
@@ -482,7 +482,7 @@ $(document).ready(function () {
             $('#form_order_popup input[name="phone"]').addClass("error");
         }
     });
-	
+
 	$('#form_order_popup input[name="call_time"]').blur(function() {
 		var s3=$('#form_order_popup input[name="call_time"]').val();
 		$('#form_order_popup input[name="call_time"]').removeClass("error");
@@ -490,7 +490,7 @@ $(document).ready(function () {
 			$('#form_order_popup input[name="call_time"]').addClass("error");
 		}
 	});
-	
+
 	$('#form_order_popup textarea[name="message"]').blur(function() {
 		var s3=$('#form_order_popup textarea[name="message"]').val();
 		$('#form_order_popup textarea[name="message"]').removeClass("error");
@@ -537,11 +537,11 @@ $(document).ready(function () {
             if (s3.length !== 0) {
                 $('#order h3').html("Спам!!!");
             }
-			
+
 			if (s4.length <=2) {
 				$('#form_order_popup textarea[name="message"]').addClass("error");
 			}
-			
+
 			if (s5.length < 4) {
 				$('#form_order_popup input[name="call_time"]').addClass("error");
 			}
@@ -582,11 +582,65 @@ function form_order_popup_ajax(val, url_ajax) {
                     break
 
                 default:
-                    sweetAlert({title:"Ошибка",text:"К сожалению, при отправке сообщения возникли проблемы. Попробуйте отправить позже",type:"error",timer:5000});	
+                    sweetAlert({title:"Ошибка",text:"К сожалению, при отправке сообщения возникли проблемы. Попробуйте отправить позже",type:"error",timer:5000});
             }
 			setTimeout(function () {
 				$("#order .uk-modal-close").trigger('click');
-			},5000);	
+			},5000);
         }
     });
 }
+
+
+
+$(document).ready(function () {
+    window.belarmmet = {
+        headerMobile: document.querySelector('.header-mobile'),
+        headerMobileInner: document.querySelector('.header-mobile__inner'),
+        headerMobileBurger: document.querySelector('.header-mobile__inner'),
+        navMobile: document.querySelector('.nav-mobile'),
+        navMobileInner: document.querySelector('.nav-mobile__inner'),
+        isMenuOpen: false,
+        init: function () {
+            this.setMobileParam();
+            this.headerMobileBurger.addEventListener('click', this.headerMobileBurgerHandler.bind(this));
+            this.navMobile.addEventListener('click', this.navMobileHandler.bind(this));
+            window.addEventListener('resize', this.resize.bind(this), true);
+        },
+        setMobileParam: function () {
+            this.headerMobile.style.height = `${this.headerMobileInner.offsetHeight}px`;
+            this.navMobileInner.style.top = `${this.headerMobileInner.offsetHeight}px`;
+        },
+        headerMobileBurgerHandler: function (e) {
+            this.isMenuOpen = !this.isMenuOpen;
+            this.checkMobileMenuState();
+        },
+        navMobileHandler: function (e) {
+            if (e.target.classList.contains('nav-mobile')) this.closeMobileMenu();
+        },
+        checkMobileMenuState: function () {
+            if (this.isMenuOpen) {
+                this.openMobileMenu();
+            } else {
+                this.closeMobileMenu();
+            }
+        },
+        closeMobileMenu: function () {
+            this.headerMobileBurger.classList.remove('header-mobile__burger--active');
+            document.body.classList.remove('uk-overflow-hidden');
+            this.navMobile.classList.remove('nav-mobile--active');
+            this.isMenuOpen = false;
+        },
+        openMobileMenu: function () {
+            this.headerMobileBurger.classList.add('header-mobile__burger--active');
+            document.body.classList.add('uk-overflow-hidden');
+            this.navMobile.classList.add('nav-mobile--active');
+            this.isMenuOpen = true;
+        },
+        resize: function () {
+            if (this.isMenuOpen && window.innerWidth >= 960) this.closeMobileMenu();
+        },
+    };
+
+    belarmmet.init();
+});

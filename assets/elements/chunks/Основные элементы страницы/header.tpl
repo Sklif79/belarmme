@@ -6,7 +6,7 @@ description:Верхняя (заглавная) часть страницы
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
-<header class="header" id="header">
+<header class="header uk-visible-large" id="header">
 	<div class="top-bar">
 		<div class="container">
 			<div class="uk-grid">
@@ -25,7 +25,25 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		{{main-menu}}
 	</nav>
 </header>
-<div class="header-scrollspy">
+<header class="header-mobile uk-hidden-large">
+    <div class="header-mobile__inner">
+        <button class="header-mobile__burger" type="button">
+            <span class="header-mobile__burger-inner"></span>
+        </button>
+        <form class="search-block uk-hidden" data-uk-search action="[~50~]">
+            <label>
+                <input type="search" placeholder="Поиск по сайту" required pattern='[A-Za-zА-Яа-яЁё-0-9]{3,50}' name='s'>
+            </label>
+            <button type="submit"><i class="uk-icon-search"></i></button>
+        </form>
+    </div>
+</header>
+<nav class="nav-mobile uk-hidden-large">
+    <div class="nav-mobile__inner">
+
+    </div>
+</nav>
+<div class="header-scrollspy uk-visible-large">
 	<div class="container flex">
 		<div class="logo">
 			[[if? &is=`[*id*]:not:1` &then=`<a href="/"><img src="assets/templates/belarmmet/img/logo-min.png" alt=""/></a>`
