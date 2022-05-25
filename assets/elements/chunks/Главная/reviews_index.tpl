@@ -5,9 +5,9 @@ description:Блок Отзывы на главной
 	<div class="main-title">
 		<h2 class="title">Отзывы</h2>
 	</div>
-	<ul class="uk-grid uk-grid-width-1-2">
-		[!DocLister? 
-		&id=`reviews_index` 
+	<ul class="uk-grid uk-grid-width-1-1 uk-grid-width-small-1-2">
+		[!DocLister?
+		&id=`reviews_index`
 		&parents=`12`
 		&tpl=`reviews_index_tpl`
 		&total=2

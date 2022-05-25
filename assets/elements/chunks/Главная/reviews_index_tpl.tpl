@@ -1,7 +1,7 @@
 name:reviews_index_tpl
 description:шаблон вывода отзыва на главной
 ======
-<li>
+<li class="uk-margin-bottom">
 	<div class="review-block">
 		<div class="uk-grid">
 			<div class="uk-width-2-3">

@@ -597,7 +597,7 @@ $(document).ready(function () {
     window.belarmmet = {
         headerMobile: document.querySelector('.header-mobile'),
         headerMobileInner: document.querySelector('.header-mobile__inner'),
-        headerMobileBurger: document.querySelector('.header-mobile__inner'),
+        headerMobileBurger: document.querySelector('.header-mobile__burger'),
         navMobile: document.querySelector('.nav-mobile'),
         navMobileInner: document.querySelector('.nav-mobile__inner'),
         isMenuOpen: false,

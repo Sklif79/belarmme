@@ -180,7 +180,7 @@
     top: 0;
     left: 0;
     right: 0;
-    z-index: 9999;
+    z-index: 1000;
 }
 
 .header-mobile__burger {
@@ -256,7 +256,7 @@
     right: 0;
     bottom: 0;
     overflow-y: auto;
-    z-index: 9998;
+    z-index: 999;
     transform: translate3d(-100vw, 0, 0);
     transition: all 0.01s linear;
     background-color: rgba(0,0,0,0.5);
@@ -278,6 +278,116 @@
     transform: translate3d(0, 0, 0);
 }
 
-@media (max-width: 959px){
+.popular-products .bx-wrapper .bx-controls-direction a {
+    height: 40px;
+    margin-top: -20px;
+    text-align: center;
+}
 
+.reviews-container .button {
+    margin-top: 7px;
+}
+
+@media (max-width: 959px){
+    .dignity-container .wrap {
+        justify-content: flex-start;
+        padding-left: 20%;
+    }
+
+    .dignity-container li {
+        border-left: 1px solid #e7e7e7;
+        margin-right: -1px;
+    }
+
+    .main-slider .content {
+        font-size: 9px;
+        top: 5px;
+        padding: 10px 11px;
+    }
+
+    .main-slider .bx-wrapper .bx-controls-auto, .main-slider .bx-wrapper .bx-pager {
+        bottom: 0;
+    }
+
+    .main-slider .bx-wrapper .bx-pager.bx-default-pager a {
+        width: 10px;
+        height: 10px;
+    }
+
+    .main-slider .bx-wrapper .bx-controls-direction a {
+        margin-top: -15px;
+    }
+
+    .main-slider .bx-wrapper .bx-controls-direction a i {
+        font-size: 26px;
+    }
+
+    .main-catalog {
+        padding: 25px 0;
+    }
+
+    .main-catalog .items a p {
+        padding: 10px 0;
+        font-size: 14px;
+    }
+
+    .main-catalog .catalog-level-one img {
+        object-fit: cover;
+    }
+
+    .main-title .title {
+        padding-left: 20px;
+        background-size: 10px auto;
+        font-size: 16px;
+        padding-top: 1px;
+    }
+
+    .about-company {
+        padding: 30px 0;
+    }
+
+    .main-block-useless {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .main-block-useless .reviews-container {
+        margin-top: 30px;
+    }
+
+    .manager-container .wrap-border {
+        padding-bottom: 17px;
+    }
+
+    #callback .uk-modal-dialog, #reviews .uk-modal-dialog {
+        max-width: 300px;
+        margin: 50px auto;
+    }
+
+    .fr-callback h3 {
+        padding: 20px 20px;
+        font-size: 15px;
+    }
+
+    .map-contact .wrap {
+        width: auto;
+        float: none;
+        padding: 30px 25px;
+    }
+
+    #map {
+        height: 300px;
+    }
+
+    .footer-menu {
+        display: none;
+    }
+
+    .footer .webcompany {
+        display: none;
+    }
+
+    .footer .logo {
+        max-width: 172px;
+    }
 }

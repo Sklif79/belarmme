@@ -2,7 +2,7 @@ name:main_catalog_index
 description:Каталог на главной
 ======
 <div class="container">
-	<ul class="catalog-level-one uk-grid uk-grid-width-1-3 uk-grid-collapse">
+	<ul class="catalog-level-one uk-grid uk-grid-width-1-1 uk-grid-width-small-1-2 uk-grid-width-large-1-3 uk-grid-collapse">
 		<li class="items">
 			<a href="[~22~]"> <img src="assets/images/index_img/vorota-main.jpeg" alt=""/>
 
