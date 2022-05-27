@@ -1,7 +1,7 @@
 name:sizes_and_prices_prod_small_tpl
 description:шаблон вывода строк малого блока размеры и цены
 ======
-<ul class="uk-grid uk-grid-width-1-6 uk-grid-collapse">
+<ul class="uk-grid uk-grid-width-large-1-6 uk-grid-collapse">
 	<li>[+col0+]</li>
 	<li>[+col1+]</li>
 	<li>[+col2+]</li>

@@ -17,10 +17,10 @@ description:Product_group_subcatalog
 		<div class="gate-catalog">
 			<div class="container">
 
-				<ul class="margin-li uk-grid uk-grid-medium uk-grid-width-1-5 product-block" data-uk-grid-match="{target:'.wrap'}">
-					[[Ditto? 
-					&id=`prodgroup` 
-					&tpl=`popular_products_tpl` 
+				<ul class="margin-li uk-grid uk-grid-medium uk-grid-width-1-2 uk-grid-width-large-1-5 product-block" data-uk-grid-match="{target:'.wrap'}">
+					[[Ditto?
+					&id=`prodgroup`
+					&tpl=`popular_products_tpl`
 					&orderBy=`menuindex ASC`
 					]]
 				</ul>

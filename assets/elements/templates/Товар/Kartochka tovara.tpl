@@ -13,7 +13,7 @@ description:Product_inside
 			<h1 class="product-title">[*pagetitle*]</h1>
 
 			<div class="top-info-product">
-				<div class="uk-grid uk-grid-width-1-2">
+				<div class="uk-grid uk-grid-width-large-1-2">
 					<div class="img uk-position-relative">
 						<img src="[[phpthumb? &input=`[*big_product_img*]` &options=`w=553,h=480,f=webp,q=84,far=C,bg=ffffff,webp=1`]]" alt="Изображение товара [*pagetitle*]"/>
 						<div class="product-icons">
