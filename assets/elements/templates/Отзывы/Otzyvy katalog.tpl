@@ -14,7 +14,7 @@ description:Reviews
 				<h1 class="title">[*pagetitle*]</h1>
 			</div>
 			<div class="comment-outside">
-				<ul class="uk-grid  uk-grid-width-1-2">
+				<ul class="uk-grid uk-grid-width-large-1-2">
 					[!Ditto? &id=`reviews` &display=`4` &paginate=`1` &tplPaginateNext=`next_pagin_tpl` &tplPaginatePrevious=`prev_pagin_tpl` &tpl=`reviews_tpl` &orderBy=`menuindex DESC`!]
 				</ul>
 			</div>

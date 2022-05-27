@@ -5,7 +5,7 @@ description:Форма оставить отзыв
 	<h3>Оставить свой отзыв</h3>
 
 	<div class="wrap-padding">
-		<div class="uk-grid uk-grid-width-1-4">
+		<div class="uk-grid uk-grid-width-large-1-4">
 			<label>
 				<input class="name" type="text" placeholder="Введите ваше имя"/>
 			</label>

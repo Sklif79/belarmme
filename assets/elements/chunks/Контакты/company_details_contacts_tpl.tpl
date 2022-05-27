@@ -1,7 +1,7 @@
 name:company_details_contacts_tpl
 description:Шаблон вывода контактной информации компании на странице контакты
 ======
-<div class="uk-width-4-10">
+<div class="uk-width-large-4-10">
 	[+col0+]
 	<hr/>
 	<div class="contact-panel">

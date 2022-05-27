@@ -14,7 +14,7 @@ description:Articles_catalog
 				<h1 class="title">[*pagetitle*]</h1>
 			</div>
 			<div class="article-outside">
-				<ul class="uk-grid uk-grid-width-1-4" data-uk-grid-match="{target:'.wrap'}">
+				<ul class="uk-grid uk-grid-width-small-1-2 uk-grid-width-large-1-4" data-uk-grid-match="{target:'.wrap'}">
 					[!Ditto? &id=`articles` &display=`8` &paginate=`1` &tplPaginateNext=`next_pagin_tpl` &tplPaginatePrevious=`prev_pagin_tpl` &tpl=`articles_tpl` &orderBy=`menuindex DESC`!]
 				</ul>
 			</div>

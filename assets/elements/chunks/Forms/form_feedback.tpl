@@ -1,11 +1,11 @@
 name:form_feedback
 description:Форма обратной связи
 ======
-<div class="uk-width-6-10">
+<div class="uk-width-large-6-10">
 	<form action="form_mail.php" method="post" id="form_feedback" class="contact-form-block" >
 		<h3>Обратная связь</h3>
 		<div class="wrap-padding">
-			<div class="uk-grid uk-grid-width-1-3">
+			<div class="uk-grid uk-grid-width-large-1-3">
 				<label>
 					<input class="name"  name="name" type="text" tabindex="101" placeholder="Введите ваше имя"/>
 				</label>
@@ -23,5 +23,5 @@ description:Форма обратной связи
 			<input type='hidden' name='type_form' value="1" />
 			<div class="btn-form"><button class="primary-button" onclick="gtag('event', 'Контакты + клик Отправить', { 'event_category': 'contacts', 'event_action': 'click2', }); ">Отправить</button></div>
 		</div>
-	</form> 
+	</form>
 </div>

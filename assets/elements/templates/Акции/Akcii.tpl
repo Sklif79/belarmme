@@ -14,12 +14,12 @@ description:Sale
 				<h1 class="title">[*pagetitle*]</h1>
 			</div>
 			<div class="sale-outside">
-				<ul class="uk-grid uk-grid-width-1-3" data-uk-grid-match="{target:'.wrap'}">
+				<ul class="uk-grid uk-grid-width-large-1-3" data-uk-grid-match="{target:'.wrap'}">
 					[[DocLister?
 					&id=`sale`
-					&tpl=`sale_prew_tpl` 
+					&tpl=`sale_prew_tpl`
 					&orderBy=`menuindex ASC`
-					&tvPrefix=`` 
+					&tvPrefix=``
 					&tvList=`sale_img_prew,sale_last_date`
 					]]
 				</ul>

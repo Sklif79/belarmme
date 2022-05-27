@@ -17,12 +17,12 @@ description:Services catalog
 				[*content*]
 			</div>
 			<div class="services-catalog">
-				<ul class="uk-grid uk-grid-width-1-2">
-					[[DocLister? 
+				<ul class="uk-grid uk-grid-width-large-1-2">
+					[[DocLister?
 					&id=`services`
 					&tpl=`services_tpl`
 					&orderBy=`menuindex ASC`
-					&tvPrefix=`` 
+					&tvPrefix=``
 					&tvList=`img_prew_serv_back,img_prew_serv_icon`
 					]]
 				</ul>

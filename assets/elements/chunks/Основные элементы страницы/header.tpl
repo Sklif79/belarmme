@@ -30,17 +30,25 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <button class="header-mobile__burger" type="button">
             <span class="header-mobile__burger-inner"></span>
         </button>
-        <form class="search-block uk-hidden" data-uk-search action="[~50~]">
-            <label>
-                <input type="search" placeholder="Поиск по сайту" required pattern='[A-Za-zА-Яа-яЁё-0-9]{3,50}' name='s'>
-            </label>
-            <button type="submit"><i class="uk-icon-search"></i></button>
-        </form>
+        <button class="header-mobile__magnifier" type="button">
+            <span class="uk-icon uk-text-contrast" uk-icon="search">
+                <svg width="28" height="28" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="search">
+                    <circle fill="none" stroke="currentColor" stroke-width="1.1" cx="9" cy="9" r="7"></circle>
+                    <path fill="none" stroke="currentColor" stroke-width="1.1" d="M14,14 L18,18 L14,14 Z"></path>
+                </svg>
+            </span>
+        </button>
     </div>
+    <form class="header-mobile__search uk-hidden-large" data-uk-search action="[~50~]">
+        <label>
+            <input type="search" placeholder="Поиск по сайту" required pattern='[A-Za-zА-Яа-яЁё0-9]{3,50}' name='s'>
+        </label>
+        <button type="submit"><i class="uk-icon-search"></i></button>
+    </form>
 </header>
 <nav class="nav-mobile uk-hidden-large">
     <div class="nav-mobile__inner">
-
+        {{top-bar-menu}}
     </div>
 </nav>
 <div class="header-scrollspy uk-visible-large">

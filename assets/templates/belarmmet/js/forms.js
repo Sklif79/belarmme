@@ -600,11 +600,14 @@ $(document).ready(function () {
         headerMobileBurger: document.querySelector('.header-mobile__burger'),
         navMobile: document.querySelector('.nav-mobile'),
         navMobileInner: document.querySelector('.nav-mobile__inner'),
+        searchMobileForm: document.querySelector('.header-mobile__search'),
+        headerMobileMagnifier: document.querySelector('.header-mobile__magnifier'),
         isMenuOpen: false,
         init: function () {
             this.setMobileParam();
             this.headerMobileBurger.addEventListener('click', this.headerMobileBurgerHandler.bind(this));
             this.navMobile.addEventListener('click', this.navMobileHandler.bind(this));
+            this.headerMobileMagnifier.addEventListener('click', this.headerMobileMagnifierHandler.bind(this));
             window.addEventListener('resize', this.resize.bind(this), true);
         },
         setMobileParam: function () {
@@ -636,6 +639,13 @@ $(document).ready(function () {
             document.body.classList.add('uk-overflow-hidden');
             this.navMobile.classList.add('nav-mobile--active');
             this.isMenuOpen = true;
+        },
+        headerMobileMagnifierHandler: function () {
+            if (this.searchMobileForm.style.top) {
+                this.searchMobileForm.style.top = '';
+            } else {
+                this.searchMobileForm.style.top = `${this.headerMobileInner.offsetHeight}px`;
+            }
         },
         resize: function () {
             if (this.isMenuOpen && window.innerWidth >= 960) this.closeMobileMenu();
