@@ -613,6 +613,12 @@ $(document).ready(function () {
         setMobileParam: function () {
             this.headerMobile.style.height = `${this.headerMobileInner.offsetHeight}px`;
             this.navMobileInner.style.top = `${this.headerMobileInner.offsetHeight}px`;
+
+
+            setTimeout(()=>{
+                this.headerMobile.style.height = `${this.headerMobileInner.offsetHeight}px`;
+                this.navMobileInner.style.top = `${this.headerMobileInner.offsetHeight}px`;
+            },500);
         },
         headerMobileBurgerHandler: function (e) {
             this.isMenuOpen = !this.isMenuOpen;

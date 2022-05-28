@@ -26,13 +26,13 @@ function tpl_stock($sheader,$stitle){
 									}
 
 $idp=$modx -> documentIdentifier;
-$dignity_arr = $modx->runSnippet('ddGetMultipleField',   array( 'inputString_docField' => 'dignity_product', 
-															   'inputString_docId' => $idp, 
+$dignity_arr = $modx->runSnippet('ddGetMultipleField',   array( 'inputString_docField' => 'dignity_product',
+															   'inputString_docId' => $idp,
 															   'outputFormat' => 'array'
 															  ));
 $count_dig=count($dignity_arr);
 if($count_dig>0){
-	?><ul class="uk-grid  uk-grid-width-1-4 uk-grid-collapse" data-uk-grid-match="{target:'.wrap'}"><?
+	?><ul class="uk-grid  uk-grid-width-1-4 uk-grid-collapse prod-dignity" data-uk-grid-match="{target:'.wrap'}"><?
 	foreach($dignity_arr as $dignity_pos){
 
 		if($dignity_pos[0]=='dignity'){

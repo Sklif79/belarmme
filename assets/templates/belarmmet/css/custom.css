@@ -166,7 +166,7 @@
 
 .container {
     width: 100%;
-    min-width: 365px;
+    min-width: 360px;
     max-width: 1170px;
 }
 
@@ -515,6 +515,12 @@
         overflow-x: auto;
     }
 
+    table {
+        max-width: 100%;
+        overflow-x: auto;
+        display: block;
+    }
+
     iframe {
         max-width: 100%;
     }
@@ -535,5 +541,41 @@
     .price-block .nds {
         padding: 0 10px;
         font-size: 14px;
+    }
+
+    .order-price__inner {
+        flex-direction: column;
+    }
+
+    .order-price__inner > div {
+        padding-left: 0;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .order-price__inner > div:last-of-type {
+        margin-bottom: 0;
+    }
+
+    .contact-panel {
+        display: flex;
+        align-items: center;
+    }
+
+    .prod-dignity {
+        flex-direction: column;
+    }
+
+    .prod-dignity > li {
+        width: 100%;
+    }
+
+    .prod-dignity .wrap {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .characteristic-block .uk-width-1-1{
+
     }
 }

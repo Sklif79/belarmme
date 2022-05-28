@@ -2,7 +2,7 @@ name:order_service_turnkey
 description:Блок с кнопкой заказать услугу под ключ
 ======
 <div class="order-price">
-	<div class="uk-grid uk-flex uk-flex-middle">
+	<div class="uk-grid uk-flex uk-flex-middle order-price__inner">
 		<div class="uk-width-1-6">
 			<img src="assets/templates/belarmmet/img/dignity-icons-1.png" alt=""/>
 		</div>
@@ -14,7 +14,7 @@ description:Блок с кнопкой заказать услугу под кл
 		</div>
 		<div class="uk-width-2-6">
 			<a href="#order" class="primary-button" data-order="Заказать услугу установки под ключ продукта [*pagetitle*]" data-uk-modal>Заказать</a>
-			<span><img src="assets/templates/belarmmet/img/ask.jpg" alt=""/></span>
+			<span class="uk-visible-large"><img src="assets/templates/belarmmet/img/ask.jpg" alt=""/></span>
 		</div>
 	</div>
 </div>
