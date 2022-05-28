@@ -389,6 +389,23 @@
         border: none;
     }
 
+    .top-bar-menu .nav-mobile__catalog {
+        border-top: 1px solid #828282;
+        padding-left: 20px;
+        margin-bottom: -1px;
+        display: none;
+    }
+
+    .nav-mobile__catalog--arrow {
+        margin-left: auto;
+        color: #fff;
+        transition: all 0.4s linear;
+    }
+
+    .nav-mobile__catalog--arrow-active {
+        transform: rotate(180deg);
+    }
+
     .dignity-container .wrap {
         justify-content: flex-start;
         padding-left: 20%;

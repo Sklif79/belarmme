@@ -600,6 +600,8 @@ $(document).ready(function () {
         headerMobileBurger: document.querySelector('.header-mobile__burger'),
         navMobile: document.querySelector('.nav-mobile'),
         navMobileInner: document.querySelector('.nav-mobile__inner'),
+        navMobileCatalog: null,
+        navMobileCatalogArrow: null,
         searchMobileForm: document.querySelector('.header-mobile__search'),
         headerMobileMagnifier: document.querySelector('.header-mobile__magnifier'),
         isMenuOpen: false,
@@ -608,6 +610,7 @@ $(document).ready(function () {
             this.headerMobileBurger.addEventListener('click', this.headerMobileBurgerHandler.bind(this));
             this.navMobile.addEventListener('click', this.navMobileHandler.bind(this));
             this.headerMobileMagnifier.addEventListener('click', this.headerMobileMagnifierHandler.bind(this));
+            this.appendCatalog();
             window.addEventListener('resize', this.resize.bind(this), true);
         },
         setMobileParam: function () {
@@ -652,6 +655,41 @@ $(document).ready(function () {
             } else {
                 this.searchMobileForm.style.top = `${this.headerMobileInner.offsetHeight}px`;
             }
+        },
+        appendCatalog: function () {
+            let catalogSource = document.querySelector('.menu_hor'),
+                catalogDestination = document.querySelector('.nav-mobile__inner .top-bar-menu > ul'),
+                ul = document.createElement('UL'),
+                li = document.createElement('LI'),
+                a = document.createElement('A'),
+                div = document.createElement('DIV');
+
+            [...catalogSource.querySelectorAll(':scope > li > a')].forEach((el) => {
+                let li = document.createElement('LI'),
+                    a = document.createElement('A');
+
+                a.innerText = el.innerText;
+                a.href = el.href;
+                li.append(a);
+                ul.append(li);
+            })
+
+            div.classList.add('nav-mobile__catalog--arrow');
+            div.innerHTML = '<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><polyline fill="none" stroke="currentColor" stroke-width="1.03" points="16 7 10 13 4 7"></polyline></svg>';
+            li.append(a);
+            li.append(ul);
+            ul.classList.add('nav-mobile__catalog');
+            a.innerText = 'Каталог';
+            a.append(div);
+            a.addEventListener('click', this.catalogButtonHandler.bind(this));
+            catalogDestination.prepend(li);
+            this.navMobileCatalog = ul;
+            this.navMobileCatalogArrow = div;
+        },
+        catalogButtonHandler: function (e) {
+            e.preventDefault();
+            this.navMobileCatalogArrow.classList.toggle('nav-mobile__catalog--arrow-active');
+            $(this.navMobileCatalog).stop().slideToggle();
         },
         resize: function () {
             if (this.isMenuOpen && window.innerWidth >= 960) this.closeMobileMenu();
