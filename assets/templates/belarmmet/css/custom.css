@@ -171,8 +171,7 @@
 }
 
 .header-mobile__inner {
-    background: url("/assets/templates/belarmmet/img/logo.png") center no-repeat #343434;
-    background-size: 120px auto;
+    background: #343434;
     color: #fff;
     height: 50px;
     padding: 10px 15px;
@@ -205,6 +204,10 @@
     background-color: transparent;
     border: 1px solid #fff;
     cursor: pointer;
+}
+
+.header-mobile__logo {
+    width: 120px;
 }
 
 .header-mobile__burger-inner {

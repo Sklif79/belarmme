@@ -30,6 +30,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <button class="header-mobile__burger" type="button">
             <span class="header-mobile__burger-inner"></span>
         </button>
+        <a href="/" class="header-mobile__logo">
+            <img src="/assets/templates/belarmmet/img/logo.png" alt="logo" title="">
+        </a>
         <button class="header-mobile__magnifier" type="button">
             <span class="uk-icon uk-text-contrast" uk-icon="search">
                 <svg width="28" height="28" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="search">
