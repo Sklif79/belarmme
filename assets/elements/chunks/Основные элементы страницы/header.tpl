@@ -62,6 +62,166 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="nav-mobile__inner">
         <nav class="top-bar-menu uk-grid-width-large-2-3">
             <ul>
+                <li>
+                    <a href="/catalog.html" title="Каталог">
+                        Каталог
+                        <div class="nav-mobile__catalog--arrow">
+                            <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <polyline fill="none" stroke="currentColor" stroke-width="1.03" points="16 7 10 13 4 7"></polyline>
+                            </svg>
+                        </div>
+                    </a>
+                    <ul class="nav-mobile__catalog">
+                        <li>
+                            <a href="/catalog/vorota.html">
+                                Ворота
+                                <div class="nav-mobile__catalog--arrow">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <polyline fill="none" stroke="currentColor" stroke-width="1.03" points="16 7 10 13 4 7"></polyline>
+                                    </svg>
+                                </div>
+                            </a>
+                            <ul class="nav-mobile__catalog">
+                                <li>
+                                    <a href="/catalog/vorota/vorota-vezdnye.html">
+                                        Въездные ворота
+                                        <div class="nav-mobile__catalog--arrow">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <polyline fill="none" stroke="currentColor" stroke-width="1.03" points="16 7 10 13 4 7"></polyline>
+                                            </svg>
+                                        </div>
+                                    </a>
+                                    <ul class="nav-mobile__catalog">
+                                        <li><a href="/catalog/vorota/vorota-vezdnye/zapolnenie-setka-rabica.html">Въездные ворота из сетки рабица</a></li>
+                                        <li><a href="/catalog/vorota/vorota-vezdnye/zapolnenie-proflist.html">Ворота из профнастила</a></li>
+                                        <li><a href="/catalog/vorota/vorota-vezdnye/zapolnenie-evroshtaketnik.html">Ворота из штакетника</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="/catalog/vorota/vorota-vezdnye-otkatnye.html">
+                                        Откатные ворота
+                                        <div class="nav-mobile__catalog--arrow">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <polyline fill="none" stroke="currentColor" stroke-width="1.03" points="16 7 10 13 4 7"></polyline>
+                                            </svg>
+                                        </div>
+                                    </a>
+                                    <ul class="nav-mobile__catalog">
+                                        <li><a href="/catalog/vorota/vorota-vezdnye-otkatnye/zapolnenie-proflist.html">Откатные ворота из профнастила</a></li>
+                                        <li><a href="/catalog/vorota/vorota-vezdnye-otkatnye/zapolnenie-setka-svarnaya-3d.html">Въездные откатные ворота из сетки</a></li>
+                                        <li><a href="/catalog/vorota/vorota-vezdnye-otkatnye/raspashnye-vorota.html">Распашные ворота</a></li>
+                                        <li><a href="/catalog/vorota/vorota-vezdnye-otkatnye/avtomaticheskie-otkatnye-vorota.html">Автоматические откатные ворота</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="/catalog/vorota/vorota-garazhnye.html">
+                                        Гаражные ворота
+                                        <div class="nav-mobile__catalog--arrow">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <polyline fill="none" stroke="currentColor" stroke-width="1.03" points="16 7 10 13 4 7"></polyline>
+                                            </svg>
+                                        </div>
+                                    </a>
+                                    <ul class="nav-mobile__catalog">
+                                        <li><a href="/catalog/vorota/vorota-garazhnye/garazhnye-raspashnye-vorota.html">Распашные гаражные ворота</a></li>
+                                        <li><a href="/catalog/vorota/vorota-garazhnye/sekcionnye-garazhnye-vorota.html">Секционные гаражные ворота</a></li>
+                                        <li><a href="/catalog/vorota/vorota-garazhnye/garazhnye-vorota-iz-profnastila.html">Гаражные ворота из профнастила</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="/catalog/kalitki.html">Калитки</a></li>
+                        <li>
+                            <a href="/catalog/zabory.html">
+                                Заборы
+                                <div class="nav-mobile__catalog--arrow">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <polyline fill="none" stroke="currentColor" stroke-width="1.03" points="16 7 10 13 4 7"></polyline>
+                                    </svg>
+                                </div>
+                            </a>
+                            <ul class="nav-mobile__catalog">
+                                <li><a href="/catalog/zabory/zabor-iz-ocinkovannoj-setki-rabica.html">Заборы из сетки рабицы</a></li>
+                                <li><a href="/catalog/zabory/zabor-iz-ocinkovannoj-v-pvh-setki-rabica.html">Забор из сетки рабица ПВХ</a></li>
+                                <li><a href="/catalog/zabory/zabor-iz-svarnoj-setki-3d.html">3Д заборы в Минске</a></li>
+                                <li><a href="/catalog/zabory/zabor-sekcionnyj.html">Забор секционный</a></li>
+                                <li><a href="/catalog/zabory/zabor-iz-proflista.html">Забор из профнастила</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="/catalog/setka-rabica.html">
+                                Сетка
+                                <div class="nav-mobile__catalog--arrow">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <polyline fill="none" stroke="currentColor" stroke-width="1.03" points="16 7 10 13 4 7"></polyline>
+                                    </svg>
+                                </div>
+                            </a>
+                            <ul class="nav-mobile__catalog">
+                                <li>
+                                    <a href="/catalog/setka-rabica/setka-rabica.html">
+                                        Сетка рабица
+                                        <div class="nav-mobile__catalog--arrow">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <polyline fill="none" stroke="currentColor" stroke-width="1.03" points="16 7 10 13 4 7"></polyline>
+                                            </svg>
+                                        </div>
+                                    </a>
+                                    <ul class="nav-mobile__catalog">
+                                        <li><a href="/catalog/setka-rabica/setka-rabica/ocinkovannaya.html">Сетка рабица оцинкованная</a></li>
+                                        <li><a href="/catalog/setka-rabica/setka-rabica/obyknovennaya.html">Сетка рабица стальная</a></li>
+                                        <li><a href="/catalog/setka-rabica/setka-rabica/s-pvh-pokrytiem.html">Сетка рабица с полимерным покрытием (ПВХ)</a></li>
+                                        <li><a href="/catalog/setka-rabica/setka-rabica/setka-rabica-optom.html">Сетка рабица оптом</a></li>
+                                        <li><a href="/catalog/setka-rabica/setka-rabica/proizvodstvo-setki-rabica.html">Производство сетки рабица</a></li>
+                                        <li><a href="/catalog/setka-rabica/setka-rabica/setka-rabica-ocinkovannaya-v-pvh.html">Сетка рабица оцинкованная в пвх</a></li>
+                                        <li><a href="/catalog/setka-rabica/setka-rabica/nedorogaya-setka-rabica.html">Недорогая сетка рабица</a></li>
+                                        <li><a href="/catalog/setka-rabica/setka-rabica/setka-rabica-s-dostavkoj.html">Сетка рабица с доставкой</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="/catalog/setka-rabica/setka-svartaya.html">
+                                        Сетка сварная
+                                        <div class="nav-mobile__catalog--arrow">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <polyline fill="none" stroke="currentColor" stroke-width="1.03" points="16 7 10 13 4 7"></polyline>
+                                            </svg>
+                                        </div>
+                                    </a>
+                                    <ul class="nav-mobile__catalog">
+                                        <li><a href="/catalog/setka-rabica/setka-svartaya/armaturnaya.html">Арматурная сетка</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="/catalog/stolby.html">
+                                Столбы для забора
+                                <div class="nav-mobile__catalog--arrow">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <polyline fill="none" stroke="currentColor" stroke-width="1.03" points="16 7 10 13 4 7"></polyline>
+                                    </svg>
+                                </div>
+                            </a>
+                            <ul class="nav-mobile__catalog">
+                                <li><a href="/catalog/stolby/profilnye.html">Профильные столбы для забора</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="/catalog/metalloprokat.html">
+                                Металлопрокат
+                                <div class="nav-mobile__catalog--arrow">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                        <polyline fill="none" stroke="currentColor" stroke-width="1.03" points="16 7 10 13 4 7"></polyline>
+                                    </svg>
+                                </div>
+                            </a>
+                            <ul class="nav-mobile__catalog">
+                                <li><a href="/catalog/metalloprokat/truba-profilnaya.html">Труба профильная</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/catalog/dobornye-elementy.html">Доборные элементы</a></li>
+                    </ul>
+                </li>
                 <li><a href="/ustanovka-zaborov.html" title="Установка забора">Установка забора</a></li>
                 <li><a href="/contacts.html" title="Контакты">Контакты</a></li>
                 <li><a href="/dostavka-po-rb.html" title="Доставка">Доставка</a></li>

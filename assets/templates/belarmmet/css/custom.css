@@ -392,15 +392,26 @@
 
     .top-bar-menu .nav-mobile__catalog {
         border-top: 1px solid #828282;
-        padding-left: 20px;
         margin-bottom: -1px;
         display: none;
+    }
+
+    .nav-mobile__catalog > li > a {
+        padding-left: 20px;
+    }
+
+    .nav-mobile__catalog > li > ul > li > a {
+        padding-left: 40px;
+    }
+
+    .nav-mobile__catalog > li > ul > li > ul > li > a {
+        padding-left: 60px;
     }
 
     .nav-mobile__catalog--arrow {
         margin-left: auto;
         color: #fff;
-        transition: all 0.4s linear;
+        transition: all 0.3s linear;
     }
 
     .nav-mobile__catalog--arrow-active {
